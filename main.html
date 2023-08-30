@@ -138,41 +138,6 @@
         }
     }
 
-    /* Sidebar */
-    body, ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar {
-        background-color: #333;
-        list-style-type: none;
-        overflow: hidden;
-    }
-
-    .navbar li {
-        float: left;
-    }
-
-    .navbar a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-
-    .sidebar {
-        width: 250px;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.3s;
-    }
-
 </style>
 
 <body>
@@ -185,8 +150,7 @@
     <!-- Navigation bar -->
     <header>
         <div class="logo">
-            <img width=40px src="travel_logo.jpg">
-            DiscoverAzerbaijan
+            DiscoverOurWorld
         </div>
 
         <div class="hamburger">
@@ -219,31 +183,6 @@
         </nav>
     </header>
 
-
-
-
-
-    <!-- Sidebar -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="#" id="sidebar-toggle">Toggle Sidebar</a></li>
-        </ul>
-    </nav>
-
-    <div class="sidebar" id="sidebar">
-        <input type="text" class="search-bar" placeholder="Search our Regions">
-        <input type="text" class="search-bar" placeholder="Village">
-        <input type="range" class="price-range" min="0" max="100" step="1">
-        <input type="text" class="search-bar" placeholder="Monuments you want">
-        <input type="text" class="search-bar" placeholder="Restaurants you want">
-        <input type="text" class="search-bar" placeholder="Hotels you want">
-        <input type="text" class="search-bar" placeholder="Parks you want">
-    </div>
-
-
-
-
-
     <script>
 
         // navbar
@@ -252,14 +191,6 @@
             navBar = document.querySelector(".nav-bar");
             navBar.classList.toggle("active")
         }
-
-        // sidebar
-        const sidebarToggle = document.getElementById("sidebar-toggle");
-        const sidebar = document.getElementById("sidebar");
-
-        sidebarToggle.addEventListener("click", () => {
-            sidebar.classList.toggle("active");
-        });
 
     </script>
 
